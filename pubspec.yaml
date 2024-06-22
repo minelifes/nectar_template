@@ -1,0 +1,34 @@
+name: nectar_template
+description: A sample command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.4.2
+
+dependencies:
+  mailer: ^6.1.0
+  build_runner: ^2.4.11
+  args: ^2.5.0
+  uuid: ^4.4.0
+  dcache: ^0.4.0
+  crypto: ^3.0.3
+  json_serializable: ^6.8.0
+  collection: ^1.19.0
+  #  nectar:
+  #    path: ../nectar/nectar
+  nectar:
+    git:
+      url: https://github.com/minelifes/nectar.git
+      path: ./nectar/
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.7
+  json_annotation: ^4.9.0
+  #  nectar_generator:
+  #    path: ../nectar/nectar_generator
+  nectar_generator:
+    git:
+      url: https://github.com/minelifes/nectar.git
+      path: ./nectar_generator/
